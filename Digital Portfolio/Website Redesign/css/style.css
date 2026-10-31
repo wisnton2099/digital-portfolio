@@ -1,0 +1,173 @@
+/* css/style.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #afbc9fe0;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .site-header {
+    background-color: #ffdb4a;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  
+  .site-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .site-header p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  .main-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar {
+    background-color: #3d7d64;
+    flex: 1 1 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-block {
+    display: block;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-block span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+  
+  .nav-block:hover {
+    transform: scale(1.03);
+  }
+  
+  .nav-block.about {
+    background-color: #f1c40f; /* yellow */
+    color: #000;
+  }
+  
+  .nav-block.volunteer {
+    background-color: #b6e136; /* light green */
+    color: #000;
+  }
+
+  .nav-block.services {
+    background-color: #6cc3d5; /* light blue */
+    color: #000;
+  }
+  
+  .nav-block.donate {
+    background-color: #e67e22; /* orange */
+    color: #000;
+  }
+  
+  .content {
+    flex: 3;
+    background-color: #bdef3d;
+    color: #014e89;
+    padding: 30px;
+    min-width: 300px;
+  }
+  
+  .content h2 {
+    color: #004e86;
+    margin-top: 1rem;
+    border-bottom: 2px solid #ff8d8d;
+    padding-bottom: 0.3rem;
+  }
+  
+  .content ul {
+    padding-left: 1.2rem;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #ffaa33;
+    color: #252529;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 15px 10px;
+    margin-top: 40px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main-layout {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .nav-block {
+      flex: 1 1 30%;
+      text-align: center;
+    }
+  }
+  .back-home {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #00849c;
+    text-decoration: none;
+  }
+  
+  .back-home:hover {
+    text-decoration: underline;
+  }
+  .site-header .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .logo {
+    height: 120px;
+    width: auto;
+  }
+  
+  .site-title h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #6a5433;
+  }
+  
+  .site-title p {
+    margin: 5px 0 0;
+    color: #3e5c2d;
+    font-size: 1rem;
+  }
